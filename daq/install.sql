@@ -7,7 +7,7 @@
  * ----------------------------------------------------------------------------
  */
 
-CREATE OR REPLACE FUNCTION install(capacity integer) RETURNS VOID AS $$
+CREATE OR REPLACE FUNCTION create_queue(capacity integer) RETURNS VOID AS $$
 BEGIN
     CREATE SEQUENCE IF NOT EXISTS read_ticket  START 0 MINVALUE 0;
     CREATE SEQUENCE IF NOT EXISTS write_ticket START 0 MINVALUE 0;
